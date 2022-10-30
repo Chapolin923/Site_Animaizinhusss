@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+    float: left;
+    margin: 0px;
+}
+
+@font-face{
+    font-family: 'Adigiana ToyBox';
+    src: url('../font/AdigianaUi.ttf');
+}
+
+@font-face{
+    font-family: 'Arimo';
+    src: url('../font/Arimo-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'Lovelo Black';
+    src: url('../font/Lovelo-Black.otf');
+}
+
+@font-face{
+    font-family: 'Ruda';
+    src: url('../font/Ruda-Regular.ttf');
+}
+
+body{
+    background-color: rgb(69,156,124);
+    margin: 10px;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*'col=']{
+    width: 100%;
+}
+
+.main-1 {width: 8.33%;}
+.main-2 {width: 16.66%;}
+.main-3 {width: 25%;}
+.main-4 {width: 33.33%;}
+.main-5 {width: 41.66%;}
+.main-6 {width: 50%;}
+.main-7 {width: 58.33%;}
+.main-8 {width: 66.66%;}
+.main-9 {width: 75%;}
+.main-10 {width: 83.33%;}
+.main-11 {width: 91.66%;}
+.main-12 {width: 100%;}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+@media only screen and (min-width: 800px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+.centraliza_itens{
+    display: flex;
+    align-items: center;
+}
+
+.centraliza-img{
+    display: flex;
+    justify-content: center;  
+}
+
+.img{
+    border: 5px solid rgb(69,156,124);
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.cabecalho{
+    font-family: "Adigiana ToyBox";
+    font-size: 15px;
+    color: white;
+}
+
+.conteudo_navegacao{
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.navegacao{
+    background-color: rgb(69,192,147);
+    border-radius: inherit;
+    padding: 10px;
+    text-align: center;
+    font-family: "Adigiana ToyBox";
+}
+
+.navegacao_dropdown{
+    background-color: rgb(69,156,124);
+    width: 95%;
+    margin-left: 2.5%;
+    text-align: center;
+    font-family: "Ruda";
+}
+
+.conteudo{
+    color: rgb(69,156,124);
+    margin: 2.5%;
+    width: 95%;
+}
+
+ul{
+    background-color: rgb(69,156,124);
+    font-family: "Adigiana ToyBox";
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+button{
+    background-color: rgb(69,156,124);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    font-family: "Ruda";
+}
+
+.subtitulo{
+    text-align: center;
+    font-family: "Adigiana ToyBox";
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.texto{
+    font-family: "Ruda";
+    text-align: justify;
+    margin: 20px;
+}
+
+.rodape{
+    color: white;
+    font-family: "Arimo";
+    font-size: 15px;
+}
+
+#criadores{
+    font-family: "Lovelo Black";
+}
